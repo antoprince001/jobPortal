@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+service JobService{
+    rpc GetAll (Empty) returns (JobList) {}
+    rpc Get (JobRequestId) returns (Job) {}
+    rpc Insert (Job) returns (Job) {}
+    rpc Update (Job) returns (Job) {}
+    rpc Remove (Job) returns (Empty) {}
+}
+
+message Empty {}
+
+message Job {
+    string id = 1;
+    string company = 2;
+    string role = 3;
+    string location = 4;
+}
+
+message JobList {
+    repeated Job jobs = 1;
+}
+
+message JobRequestId{
+    string id = 1;
+}

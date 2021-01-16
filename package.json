@@ -1,0 +1,18 @@
+{
+  "name": "job_portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antony Prince",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.5",
+    "express": "^4.17.1",
+    "grpc": "^1.24.4",
+    "hbs": "^4.1.1",
+    "uuid": "^8.3.2"
+  }
+}
